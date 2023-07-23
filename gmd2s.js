@@ -19,14 +19,18 @@ function load()
         if (response.status == 200) {
             return response.text();
         }
-        return {};
+        return `
+<span style="color:#f00;">**加载失败！请检查网址拼写或网络连接！**</span>
+
+请求文件：${window.location.protocol}//${window.location.host}${doc}
+        `;
     });
     prms.then((result) => {
         try {
             document.getElementById("content").innerHTML = marked.parse(result);
         }
         catch (err) {
-            document.getElementById("content").innerHTML = `<center><p style="color:#f00;font-size:1.25em;"><b>加载失败！请检查网址拼写或网络连接！</b><br><br>请求文件：${window.location.protocol}//${window.location.host}${doc}<br><br>错误：${err}</p></center>`;
+            console.log("gmd2s: error");
         }
     });
 }
