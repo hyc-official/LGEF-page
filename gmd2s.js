@@ -13,6 +13,7 @@ function load()
     if (doc.substring(doc.length - 3, doc.length) != ".md") {
         doc += ".md";
     }
+    console.log(`gmd2s: resource URL ${doc}`);
     let prms = fetch(doc).then((response) => {
         if (response.status == 200) {
             return response.text();
