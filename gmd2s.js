@@ -1,5 +1,5 @@
 // config
-var dir = "/md";
+var dir = "./md";
 
 function load()
 {
