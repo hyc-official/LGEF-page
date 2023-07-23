@@ -3,7 +3,7 @@ var dir = "/md";
 
 function load()
 {
-    document.getElementById("content").innerHTML = "<center>加载中，请稍候...</center>";
+    document.getElementById("content").innerHTML = "<center><p>加载中，请稍候...</p></center>";
     let doc = dir + window.location.pathname;
     if (doc[doc.length - 1] == "/") {
         doc += "index.md";
