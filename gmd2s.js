@@ -22,7 +22,7 @@ function load()
         return `
 <span style="color:#f00;">**加载失败！请检查网址拼写或网络连接！**</span>
 
-请求文件：${window.location.protocol}//${window.location.host}${doc}
+请求文件：${doc}
         `;
     });
     prms.then((result) => {

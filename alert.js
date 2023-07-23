@@ -5,13 +5,9 @@ var alert = `<p><i class="fa fa-flag-o"></i> 公告：LGEF 正式发布 0.0.1 �
 var bar = `&nbsp;&nbsp;&nbsp;
 <span class="BarElement"><i class="fa fa-list"></i> 导航</span>
 &nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="./index.html" class="BarElement"><i class="fa fa-home"></i> 首页</a>
+<a href="./" class="BarElement"><i class="fa fa-home"></i> 首页</a>
 &nbsp;&nbsp;&nbsp;
-<a href="./install.html" class="BarElement"><i class="fa fa-download"></i> 安装</a>
-&nbsp;&nbsp;&nbsp;
-<a href="./contributors.html" class="BarElement"><i class="fa fa-user"></i> 贡献者</a>
-&nbsp;&nbsp;&nbsp;
-<a href="./mirrors.html" class="BarElement"><i class="fa fa-sitemap"></i> 镜像站列表</a>
+<a href="./install" class="BarElement"><i class="fa fa-download"></i> 安装</a>
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="https://github.com/hyc-official/LuoguExtendFeed" class="BarElement" target="_blank"><i class="fa fa-code"></i> GH 仓库</a>`
 var foot = `<center>
