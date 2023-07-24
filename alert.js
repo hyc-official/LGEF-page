@@ -1,14 +1,9 @@
-var ver;
-try {
-    ver = await fetch("https://lgef-source.heyc.eu.org/version").then((response) => {
-        if (response.status == 200) {
-            return response.text();
-        }
-        return "获取失败";
-    });
-} catch (err) {
-    ver = "获取失败"
-}
+var ver = await fetch("https://lgef-source.heyc.eu.org/version").then((response) => {
+    if (response.status == 200) {
+        return response.text();
+    }
+    return "获取失败";
+});
 
 var alert = `<p><i class="fa fa-flag-o"></i> 公告：LGEF 正式发布 0.1.0 版本！<br>
 <i class="fa fa-code"></i> 当前最新版本：<span style="color: #e67e22">${ver} LRV</span><br>
