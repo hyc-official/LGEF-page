@@ -1,5 +1,19 @@
-var ver = "0.0.2";
-var alert = `<p><i class="fa fa-flag-o"></i> 公告：LGEF 正式发布 0.0.1 版本！<br>
+var ver;
+function getver() {
+    try {
+        ver = await fetch("https://lgef-source.heyc.eu.org/version").then((response) => {
+            if (response.status == 200) {
+                return response.text();
+            }
+            return "获取失败";
+        });
+    } catch (err) {
+        ver = "获取失败"
+    }
+}
+getver();
+
+var alert = `<p><i class="fa fa-flag-o"></i> 公告：LGEF 正式发布 0.1.0 版本！<br>
 <i class="fa fa-code"></i> 当前最新版本：<span style="color: #e67e22">${ver} LRV</span><br>
 <i class="fa fa-envelope-o"></i> 访问量统计：<img src="https://badges.toozhao.com/badges/01H5XRS8A83AAJHPPR1WMZRH07/blue.svg" style="height: 1em;" /></p>`;
 var bar = `&nbsp;&nbsp;&nbsp;
