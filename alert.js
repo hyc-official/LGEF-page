@@ -1,8 +1,10 @@
-var ver = await fetch("https://lgef-source.heyc.eu.org/version").then((response) => {
+var ver;
+await fetch("https://lgef-source.heyc.eu.org/version").then((response) => {
     if (response.status == 200) {
-        return response.text();
+        ver = response.text();
+    } else {
+        ver = "获取失败";
     }
-    return "获取失败";
 });
 
 var alert = `<p><i class="fa fa-flag-o"></i> 公告：LGEF 正式发布 0.1.0 版本！<br>
