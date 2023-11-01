@@ -16,11 +16,15 @@ var foot = `<center>
     <br>
 </center>`;
 async function set_version() {
-    fetch("https://api.kgithub.com/repos/hyc-official/LuoguExtendFeed/releases/latest")
+    fetch("https://api.github.com/repos/hyc-official/LuoguExtendFeed/releases/latest")
       .then((response) => response.json())
       .then((data) => {
           console.log(data);
           document.getElementById("version").innerText = data.tag_name + " (由 " + data.author.login + " 发布)";
+      })
+      .catch((err) => {
+          console.error("Get version error", err);
+          document.getElementById("version").innerText = "获取失败，请检查网络";
       });
 }
 function set_alert() {
