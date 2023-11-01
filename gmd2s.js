@@ -28,6 +28,7 @@ function load()
     prms.then((result) => {
         try {
             document.getElementById("content").innerHTML = marked.parse(result);
+            set_alert();
         }
         catch (err) {
             console.log("gmd2s: error");
