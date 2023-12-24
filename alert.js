@@ -1,7 +1,7 @@
 var ver = "0.1.3";
-var alert = `<p><i class="fa fa-flag-o"></i> 公告：由于犇犇保存站可能在一段时间后停运（<a href="https://benben.imken.dev/feed/2775208" target="_blank">点我</a>），将来本脚本可能失效，敬请谅解。<br>
+var alert = `<p><i class="fa fa-flag"></i> 公告：由于犇犇保存站可能在一段时间后停运（<a href="https://benben.imken.dev/feed/2775208" target="_blank">点我</a>），将来本脚本可能失效，敬请谅解。<br>
 <i class="fa fa-code"></i> 当前最新版本：<span style="color: #e67e22" id="version">正在获取中...</span><br>
-<i class="fa fa-envelope-o"></i> 访问量统计：<img src="https://badges.toozhao.com/badges/01H5XRS8A83AAJHPPR1WMZRH07/blue.svg" style="height: 1em;" /></p>`;
+<i class="fa fa-envelope"></i> 访问量统计：<img src="https://badges.toozhao.com/badges/01H5XRS8A83AAJHPPR1WMZRH07/blue.svg" style="height: 1em;" /></p>`;
 var bar = `&nbsp;&nbsp;&nbsp;
 <span class="BarElement"><i class="fa fa-list"></i> 导航</span>
 &nbsp;&nbsp;|&nbsp;&nbsp;
